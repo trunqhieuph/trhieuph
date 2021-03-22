@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>PAGE</title> 
+  <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+#more {display: none;}
+{
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2ECCFA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0489B1;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #0000;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</head>
+<body background-color:gray>
+<body style="height:1500px">
+
+<!---NAV BAR--->
+<!---LINK--->
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">BALLOONS</a>
+  <ul class="navbar-nav ml-auto"> 
+    <li class="nav-item">
+      <a class="nav-link" href="galery.html">GALLERY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">CONTACT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">ABOUT US</a>
+    </li>
+  </ul>
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-light" type="submit">Search</button>
+  </form>
+</nav>
+
+ </div>
+
+
+ <!-- NAVBAR-->
+
+<div id="demo" class="carousel slide" data-ride="carousel" background-color: black>
+  <ul class="carousel-indicators">
+
+    <!-- Images -->
+
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+
+  </ul>
+  <div class="carousel-inner">
+    <!-- Carasoul slide 1-->
+    <div class="carousel-item active">
+      <img src="111-100.jpg">
+      <div class="carousel-caption">
+        <h3>TRUNG HIEU PHAN</h3>
+        <p>LET'S SEE</p>
+      </div>   
+    </div>
+
+
+    <div class="carousel-item">
+      <!-- Carasoul slide 2 -->
+      <img src= "222-100.jpg">
+      <div class="carousel-caption">
+        <h3>DARK MOODY</h3>
+      </div>   
+    </div>
+
+
+    <div class="carousel-item">
+      <!-- Carasol slide 3 -->
+      <img src= "333-100.jpg" weight=2000 height=1000>
+      <div class="carousel-caption">
+        <h3>GRAY DAY</h3>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- END -->
+
+<!--- GALERY CODES ---> 
+<section>
+  <br>
+  <div>
+
+
+  <!----First Container --->
+
+  <div class="container">
+    <br>
+    <h1 style="text-align: center;">Gallery</h1>
+    <br>
+
+    <!---ROW 1--->
+
+    <div class="row">
+
+      <!---COL 1--->
+      <div class="col">
+        <img src="HAHA.jpg">
+        <h2>BLACK</h2>
+        <p> Like a leaf in the wind.</p>
+      </div>
+      
+      <!---COL 2--->
+      <div class="col">
+        <img src="sky.jpg">
+        <h2>SKY</h2>
+        <p> Walk away.</p>
+      </div>
+
+      <!---COL 3--->
+      <div class="col">
+        <img src="search.jpg">
+        <h2> SEARCHING</h2>
+        <p> Keep searching.</p>
+
+      </div>
+    </div>
+
+    <!---ROW 2--->
+    
+    <div class="row">
+
+      <!---COL 1--->
+      <div class="col">
+        <img src="wicked.jpg">
+        <h2> WICKED</h2>
+        <p> Memento mori.</p>
+      </div>
+      
+      <!---COL 2--->
+      <div class="col">
+        <img src="tenet.jpg">
+        <h2> TENET</h2>
+        <p> Knowledge is King.</p>
+      </div>
+
+      <!---COL 3--->
+      <div class="col">
+        <img src="venus.jpg">
+        <h2> VENUS</h2>
+        <p> MEROL MUSPI.</p>
+
+      </div>
+    </div>
+
+
+
+</section>
+<br>
+<style>
+video {
+  width: 100%;
+  height: auto;
+}
+</style> 
+<video width="400" controls>
+  <source src="Aesthetic.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+  
+</div>
+
+<!---ABOUTUS--->
+
+
+<section>
+  <div class="container">
+    <h1 class="text-center">About us</h1> 
+    <hr class="w-100 pt-5">
+
+    <div class="container">
+    <div class="row" >
+      <div class="col">
+          <img src="đá.jpg" width="100%">
+      </div>
+      <div class="col">
+        <h2>My story</h2>
+        <br>
+        <!---Read More Read Less--->
+        <p>Once I was seven years old, my mama told me<br>
+           Go make yourself some friends or you'll be lonely<br>
+           Once I was seven years old<span id="dots">...</span><span id="more">
+           It was a big big world,<br>
+           but we thought we were bigger<br>
+           Pushing each other to the limits, we were learning quicker<br>
+           By 11 smoking herb and drinking burning liquor<br>
+           Never rich so we were out to make that steady figure<br>
+           Once I was 11 years old, my daddy told me<br>
+           Go get yourself a wife or you'll be lonely<br>
+           Once I was 11 years old</span></p>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary">Read more</button>
+
+  </div>
+</form>
+</div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+<!---FOOTER-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="footer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 20px 10px 20px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/trunq.hieu.ph/" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+      
+</body>
+</div>
+</body>
+</html>
